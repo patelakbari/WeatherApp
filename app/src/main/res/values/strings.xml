@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="permission_denied_msg">Location permission denied. Please allow precise location access</string>
+    <string name="location_disable_msg">Can\'t fetch weather without location access. Allow for accurate updates!</string>
+    <string name="no_internet">No Internet connection</string>
+    <string name="open_setting">Open Setting</string>
+    <string name="allow">Allow</string>
+    <string name="retry">Retry</string>
+    <string name="back_icon">back icon</string>
+    <string name="search_city">Search city</string>
+    <string name="searching">Searching…</string>
+    <string name="next_icon">Next Icon</string>
+    <string name="search_here">search here</string>
+    <string name="click_search">Press search button</string>
+    <string name="no_results">City not found</string>
+    <string name="weather_icon">weather_icon</string>
+    <string name="celsius">°C</string>
+    <string name="atmospheric_pressure">Atmospheric pressure</string>
+    <string name="wind">Wind</string>
+    <string name="humidity">Humidity</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_700"
+    android:orientation="vertical"
+    tools:context=".ui.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_icon"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:src="@drawable/ic_back_24" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/search_location_bg"
+            android:hint="@string/search_here"
+            android:theme="@style/AppSearchView"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null">
+
+            <requestFocus />
+        </androidx.appcompat.widget.SearchView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_search_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:fontFamily="@font/garnett_light"
+            android:gravity="center"
+            android:text="@string/search_city"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/row_item_cities" />
+
+    </RelativeLayout>
+
+</LinearLayout>
