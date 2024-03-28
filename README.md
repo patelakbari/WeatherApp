@@ -2,7 +2,7 @@
 
 MVVM Architecture is one of the most popular and latest architecture to develop a maintanable and managable codebase. I  have develop a sample `Weater` Android App with `MVVM Architecture` using `Kotlin` language,`Dagger Hilt` for dependency injection,`Coroutine`,`Retrofit` network calling library,`Google Map` and current location fetch form user device.
 
-<img src="https://github.com/patelakbari/WeatherApp/blob/master/screenshot/IMG-20240328-WA0036.jpg" width="720" height="1280" /> 
+<img src="https://github.com/patelakbari/WeatherApp/blob/master/screenshot/IMG-20240328-WA0036.jpg" width="420" height="1280" /> 
 
 ### Project Description
 I have developed a weather Android application using the MVVM architecture. The user interface will resemble the screenshot provided above. The application provides real-time weather updates for the user's current location. It includes a search feature where users can input a city name. Upon selecting a city from the search results, the application sends a request to the OpenWeather web API to fetch and display the weather information in the UI.
